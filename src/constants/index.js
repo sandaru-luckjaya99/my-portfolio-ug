@@ -23,7 +23,10 @@ import {
   huntly,
   oracle,
   comicify_ai,
-  greentrust
+  greentrust,
+  icc,
+  usjp,
+  
 } from "../assets";
 
 import {
@@ -70,7 +73,8 @@ import {
   SiGooglemaps,
   SiOpenai,
   SiGooglecloud,
-  SiNextdotjs
+  SiNextdotjs,
+  SiMongodb
 } from "react-icons/si";
 
 import {
@@ -118,12 +122,23 @@ export const navLinks = [
 export const educationList = [
   {
     id: "education-1",
-    icon: nitk,
-    title: "National Institute of Technology Karnataka, Surathkal",
-    degree: "Bachelor of Technology",
-    duration: "December 2020 - May 2024",
-    content1: "Major: Electronics and Communication Engineering",
-    content2: "Minor: Information Technology",
+    icon: icc,
+    title: "Ibbagamuwa Central College",
+    degree: "G.C.E. Advanced Level Examination",
+    duration: "2016 - 2018",
+    // content1: "Major: Electronics and Communication Engineering",
+    // content2: "Minor: Information Technology",
+  },  
+  
+  {
+    id: "education-1",
+    icon: usjp,
+    title: "University of Sri Jayewardenepura",
+    degree: "BSc (Hons) in Information Technology",
+    content1: "Department of ICT",
+    content2: "Faculty of humanities and Social sciences",
+    duration: "Undergraduate From 2020",
+
   },
 ];
 
@@ -131,26 +146,26 @@ export const skills = [
   {
     title: "Programming Languages",
     items: [
-      {
-        id: "pl-1",
-        icon: SiCplusplus,
-        name: "C++",
-      },
+      // {
+      //   id: "pl-1",
+      //   icon: SiCplusplus,
+      //   name: "C++",
+      // },
       {
         id: "pl-2",
         icon: SiPython,
         name: "Python",
       },
-      {
-        id: "pl-3",
-        icon: DiRuby,
-        name: "Ruby",
-      },
-      {
-        id: "pl-4",
-        icon: SiC,
-        name: "C",
-      },
+      // {
+      //   id: "pl-3",
+      //   icon: DiRuby,
+      //   name: "Ruby",
+      // },
+      // {
+      //   id: "pl-4",
+      //   icon: SiC,
+      //   name: "C",
+      // },
       {
         id: "pl-5",
         icon: AiFillHtml5,
@@ -166,11 +181,11 @@ export const skills = [
         icon: SiJavascript,
         name: "JavaScript",
       },
-      {
-        id: "pl-8",
-        icon: SiSolidity,
-        name: "Solidity",
-      },
+      // {
+      //   id: "pl-8",
+      //   icon: SiSolidity,
+      //   name: "Solidity",
+      // },
       {
         id: "pl-9",
         icon: DiJava,
@@ -181,20 +196,17 @@ export const skills = [
   {
     title: "Frameworks/Libraries",
     items: [
-      {
-        id: "f-1",
-        icon: SiDjango,
-        name: "Django",
-      },
-      {
-        id: "f-2",
-        icon: SiRubyonrails,
-        name: "Ruby on Rails",
-      },
+
+
       {
         id: "f-3",
         icon: SiReact,
         name: "ReactJS",
+      },
+      {
+        id: "f-3",
+        icon: SiReact,
+        name: "React Native",
       },
       {
         id: "f-4",
@@ -206,21 +218,17 @@ export const skills = [
         icon: SiTailwindcss,
         name: "Tailwind CSS",
       },
-      {
-        id: "f-6",
-        icon: SiJquery,
-        name: "jQuery",
-      },
-      {
-        id: "f-7",
-        icon: SiGraphql,
-        name: "GraphQL",
-      },
-      {
-        id: "f-8",
-        icon: SiDotnet,
-        name: ".NET",
-      },
+
+      // {
+      //   id: "f-7",
+      //   icon: SiGraphql,
+      //   name: "GraphQL",
+      // },
+      // {
+      //   id: "f-8",
+      //   icon: SiDotnet,
+      //   name: ".NET",
+      // },
     ],
   },
   {
@@ -263,78 +271,62 @@ export const skills = [
       },
       {
         id: "t-8",
-        icon: SiVite,
-        name: "ViteJS",
+        icon: SiMongodb,
+        name: "MongoDB",
       },
     ],
   },
 ];
 
 export const experiences = [
-  {
-    organisation: "Oracle, India",
-    logo: oracle,
-    link: "https://www.oracle.com/in/",
-    positions: [
-      {
-        title: "Member of Technical Staff Intern",
-        duration: "May 2023 - Jul 2023",
-        content: [
-          {
-            text: "Working as part of the Exa-CC team building Oracle Database as a service.",
-            link: "",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    organisation: "IRIS, NITK",
-    logo: iris,
-    link: "https://iris.nitk.ac.in/about_us",
-    positions: [
-      {
-        title: "Tech Lead",
-        duration: "Apr 2023 - Present",
-        content: [
-          {
-            text: "Leading a team of 40+ students driving a digital transformation at NITK.",
-            link: "",
-          },
-        ],
-      },
-      {
-        title: "Web Lead",
-        duration: "Apr 2022 - Present",
-        content: [
-          {
-            text: "Managing a team of 6 student developers while also overlooking multiple modules.",
-            link: "",
-          },
-        ],
-      },
-      {
-        title: "Web Developer",
-        duration: "Nov 2021 - Apr 2022",
-        content: [
-          {
-            text: "Added Conditional Fields support to the Forms Module.",
-            link: "",
-          },
-        ],
-      },
-      {
-        title: "Web Developer Intern",
-        duration: "Jun 2021 - Oct 2021",
-        content: [
-          {
-            text: "Developed a multi-role approval flow system to facilitate data collection and display on the Institute's Department Websites.",
-            link: "",
-          },
-        ],
-      },
-    ],
-  },
+
+  // {
+  //   organisation: "IRIS, NITK",
+  //   logo: iris,
+  //   link: "https://iris.nitk.ac.in/about_us",
+  //   positions: [
+  //     {
+  //       title: "Tech Lead",
+  //       duration: "Apr 2023 - Present",
+  //       content: [
+  //         {
+  //           text: "Leading a team of 40+ students driving a digital transformation at NITK.",
+  //           link: "",
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       title: "Web Lead",
+  //       duration: "Apr 2022 - Present",
+  //       content: [
+  //         {
+  //           text: "Managing a team of 6 student developers while also overlooking multiple modules.",
+  //           link: "",
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       title: "Web Developer",
+  //       duration: "Nov 2021 - Apr 2022",
+  //       content: [
+  //         {
+  //           text: "Added Conditional Fields support to the Forms Module.",
+  //           link: "",
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       title: "Web Developer Intern",
+  //       duration: "Jun 2021 - Oct 2021",
+  //       content: [
+  //         {
+  //           text: "Developed a multi-role approval flow system to facilitate data collection and display on the Institute's Department Websites.",
+  //           link: "",
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
   {
     organisation: "Career Development Centre, NITK",
     logo: cdc,
@@ -1077,7 +1069,7 @@ export const socialMedia = [
 ];
 
 export const aboutMe = {
-    name: "Parth Mittal",
+    name: "Sandaruwan Dahanake",
     tagLine: "MTS Intern @Oracle | ETHIndia'22 Winner | 8x Hackathon Winner | Tech Lead @IRIS, NITK | Co-Chair @GDSC, NITK",
-    intro: "Student web-developer from India who is either busy improving his craft or pondering over the next big idea."
+    intro: "As an IT-loving undergrad, I've honed programming and research skills through projects. Eager to contribute expertise to your company. Check my portfolio web!"
 }
