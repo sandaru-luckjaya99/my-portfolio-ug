@@ -9,7 +9,7 @@ import {
   SkillsAndExperience,
   ExtraCurricular,
   Footer,
-  OpenSource,
+  Certificate,
   Projects,
   BlogPosts,
   Loading
@@ -55,7 +55,7 @@ const App = () => {
             <Education />
             <Projects />
             <BlogPosts enabled={false} />
-            <OpenSource />
+            <Certificate />
             <ExtraCurricular />
           </div>
         </div>
