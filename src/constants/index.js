@@ -31,7 +31,8 @@ import {
   screenlock,
   wefhss,
   todo,
-  linkedin
+  linkedin,
+  ictsa
   
 } from "../assets";
 
@@ -636,60 +637,16 @@ export const stats = [
 
 export const extraCurricular = [
   {
-    organisation: "Google Developer Student Club, NITK",
-    title: "Co-Chair",
-    duration: "December 2021 - Present",
+    organisation: "ICTSA",
+    title: "President",
+    duration: "March 2022 - March 2023",
     content: [
       {
-        text: "Co-designed and developed the official website of Incident, NITK with 15K+ visitors",
-        link: "https://incident.nitk.ac.in/",
+        text: "The Information and Communication Technology Student Association (ICTSA) takes great pride in being the acknowledged student association of the Department of ICT within the Faculty of Humanities and Social Sciences at the University of Sri Jayewardenepura.",
+        link: "https://www.linkedin.com/posts/sandaru99_ictsa-departmentofict-fhss-activity-6925663227137732608-1VZz?utm_source=share&utm_medium=member_desktop",
       },
     ],
-    logo: gdsc,
-  },
-  {
-    organisation: "Genesis, NITK",
-    title: "Competitions Head",
-    duration: "Sep 2021 - Present",
-    content: [
-      {
-        text: "Qualified for the nationals of Indian Hip Hop Dance Championship",
-        link: "",
-      },
-      {
-        text: "Won 7 inter-college solo dance competitions",
-        link: "",
-      },
-    ],
-    logo: genesis,
-  },
-  {
-    organisation: "IRIS, NITK",
-    title: "Tutor",
-    duration: "Jan 2022 - Jan 2022",
-    content: [
-      {
-        text: "Mentored 150+ students in a month-long Web Development and Ruby on Rails Bootcamp",
-        link: "https://github.com/IRIS-NITK/IRIS-RoR-Bootcamp-2021",
-      },
-    ],
-    logo: iris,
-  },
-  {
-    organisation: "E-Cell, NITK",
-    title: "Executive Member",
-    duration: "Sep 2021 - Apr 2022",
-    content: [
-      {
-        text: "Organised the season 3 of the E-Cell NITK Podcast",
-        link: "https://www.youtube.com/watch?v=uA-Yrk6bVDc",
-      },
-      {
-        text: "Member of the Sponsorship and E-Talks team for E-Summit'22",
-        link: "",
-      },
-    ],
-    logo: ecell,
+    logo: ictsa,
   },
 ];
 

@@ -28,6 +28,7 @@ import nitk from "./nitk.png";
 import icc from "./icc.png";
 import usjp from "./usjp.png";
 import blog from "./blog.png";
+import ictsa from "./ICTSA.jpg"
 import screenlock from "./screenlock.png";
 import musicStore from "./musicStore.png";
 import wefhss from "./wefhss.png"
@@ -107,5 +108,6 @@ export {
   blog,
   musicStore,
   screenlock,
-  wefhss
+  wefhss,
+  ictsa
 };
