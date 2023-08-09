@@ -39,7 +39,7 @@ const SkillCard = (props) => {
 const Content = ({ text, link }) => {
   return (
     <div>
-      <p className="font-poppins font-normal text-[14px] text-dimWhite mt-4">
+      <p className="font-poppins font-normal text-[16px] text-dimWhite mt-4">
         - {text}{" "}
         {link ? (
           <a href={link} target="_blank">
@@ -66,7 +66,7 @@ const ExperienceCard = (props) => {
         <img
           src={props.logo}
           alt={props.organisation}
-          className="w-[52px] h-[52px] rounded-full z-[2]"
+          className="w-[60px] h-[60px] z-[2]"
         />
         <h4 className="font-poppins font-semibold text-[20px] text-gradient leading-[32px] ml-2">
           {props.organisation}

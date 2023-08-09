@@ -27,7 +27,7 @@ const Content = ({ text, link }) => {
 const ExtraCurricularCard = (props) => {
   return (
     <motion.div
-      className="flex flex-col px-10 py-12 rounded-[20px] max-w-[370px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card"
+      className="flex flex-col px-5 py-12 rounded-[20px] max-w-[370px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card"
       whileInView={{ y: [-30, 0], opacity: [0, 1] }}
       transition={{ duration: 1 }}
     >
@@ -35,7 +35,7 @@ const ExtraCurricularCard = (props) => {
         <img
           src={props.logo}
           alt={props.organisation}
-          className="w-[52px] h-[52px] rounded-full"
+          className="w-[55px] h-[55px] rounded-full"
         />
         <div className="flex flex-col ml-4">
           <h4 className="font-poppins font-semibold text-[20px] text-gradient leading-[32px]">
@@ -69,7 +69,7 @@ const ExtraCurricular = () => {
       <div className={`${styles.flexCenter} flex-col relative mb-4 mt-8`}>
         <div className="absolute z-[0] w-[60%] h-[60%] -right-[50%] rounded-full blue__gradient bottom-40" />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8 md:mt-16 md:grid-cols-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8 md:mt-3 md:grid-cols-3">
           {extraCurricular.map((card) => (
             <ExtraCurricularCard key={card.id} {...card} />
           ))}
