@@ -20,13 +20,13 @@ const styles = {
 
 export const layout = {
   section: `flex md:flex-row flex-col ${styles.paddingY}`,
-  sectionReverse: `flex md:flex-row flex-col-reverse ${styles.paddingY}  `,
+  sectionReverse: `flex md:flex-row-reverse flex-col-reverse ${styles.paddingY}`,
 
-  sectionImgReverse: `flex-1 flex ${styles.flexCenter} md:mr-10 mr-0 md:mt-0 mt-10 relative`,
-  sectionImg: `flex-1 flex ${styles.flexCenter} md:ml-10 ml-0 md:mt-0 mt-10 relative`,
-  sectionImgReverseEnd: `flex-1 flex ${styles.flexEnd} md:mr-12 ml-4 mb-4 md:mb-0 md:mt-0 mt-10 relative`,
+  sectionImgReverse: `flex-1 flex ${styles.flexCenter} md:ml-10 mr-0 md:mt-0 mt-10 relative`,
+  sectionImg: `flex-1 flex ${styles.flexCenter} md:mr-10 ml-0 md:mt-0 mt-10 relative`,
+  sectionImgReverseEnd: `flex-1 flex ${styles.flexEnd} md:ml-12 mr-4 mb-4 md:mb-0 md:mt-0 mt-10 relative`,
 
-  sectionInfo: `flex-1 ${styles.flexStart} flex-col`,
+  sectionInfo: `flex-1 ${styles.flexStart} flex-col md:pl-10`,
 };
 
 export default styles;
