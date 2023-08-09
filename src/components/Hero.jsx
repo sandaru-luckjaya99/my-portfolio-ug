@@ -89,9 +89,9 @@ const Hero = () => {
         <img
           src="src\assets\profile.jpg"  // Update with the actual path to your profile photo
           alt="Your Profile Photo"
-          className="h-auto w-[90%] md:w-[70%] rounded-full"
+          className="h-auto w-[50%] md:w-[70%] rounded-full border-4 border-white"
         />
-        <div className="absolute z-[1] w-[50%] h-[50%] rounded-full bottom-40 white__gradient"></div>
+        <div className="absolute z-[1] w-[100%] h-[80%] rounded-full bottom-40 white__gradient"></div>
       </div>
 
     </section>
