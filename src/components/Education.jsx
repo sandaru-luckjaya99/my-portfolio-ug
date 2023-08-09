@@ -24,56 +24,45 @@ const FeatureCard = ({
   index,
 }) => (
   <div
-    className={`flex flex-row p-6 rounded-[20px] mb-6 feature-card w-full `}
+    className={`flex flex-row p-8 rounded-[20px]
+    ${index === educationList.length - 1 ? "mb-0" : "mb-6"} feature-card`}
   >
     <div
-      className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}
+      className={`w-[80px] h-[80px] rounded-full ${styles.flexCenter} bg-dimBlue`}
     >
-      <img
-        src={icon}
-        alt="icon"
-        className="w-[80%] h-[80%] object-contain"
-      />
+      <img src={icon} alt="icon" className="w-[90%] h-[90%] object-contain" />
     </div>
-    <div className="flex-1 flex flex-col ml-4">
-      <h4 className="font-poppins font-semibold text-white text-[24px] leading-[30px] mb-1 text-gradient">
+    <div className="flex-1 flex flex-col ml-6">
+      <h4 className="font-poppins font-semibold text-white text-[24px] leading-[36px] mb-1 text-gradient">
         {title}
       </h4>
-      <p className="font-poppins font-normal text-white text-[18px] leading-[30px] mb-1 ">
+      <p className="font-poppins font-normal text-white text-[18px] leading-[36px] mb-1 ">
         {degree}
       </p>
-      <p className="font-poppins font-normal text-white text-[18px] leading-[30px] mb-1 ">
+      <p className="font-poppins font-normal text-dimWhite text-[16px] leading-[30px] mb-1">
         {duration}
       </p>
-      <p className="font-poppins font-normal text-white text-[18px] leading-[30px] mb-1 ">
+      <p className="font-poppins font-normal text-dimWhite text-[18px] leading-[30px] mb-1">
         {content1}
       </p>
-      <p className="font-poppins font-normal text-white text-[18px] leading-[30px] mb-1 ">
+      <p className="font-poppins font-normal text-dimWhite text-[18px] leading-[30px] mb-1">
         {content2}
       </p>
     </div>
   </div>
 );
+
 const Education = () => {
   return (
     <section id="education">
       <h1 className="flex-1 font-poppins font-semibold ss:text-[55px] text-[45px] text-white ss:leading-[80px] leading-[80px]">
         Education
       </h1>
-
-      <div className="flex flex-col justify-center">
-        {educationList.map((education, index) => (
-          <FeatureCard
-            key={index}
-            icon={education.icon}
-            title={education.title}
-            degree={education.degree}
-            duration={education.duration}
-            content1={education.content1}
-            content2={education.content2}
-          />
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+        {educationList.map((feature, index) => (
+          <FeatureCard key={feature.id} index={index} {...feature} />
         ))}
-      </div>      
+      </div>
     </section>
   );
 };
