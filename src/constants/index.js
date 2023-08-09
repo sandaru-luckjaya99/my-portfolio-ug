@@ -28,7 +28,8 @@ import {
   usjp,
   blog,
   musicStore,
-  screenlock
+  screenlock,
+  wefhss
   
 } from "../assets";
 
@@ -336,20 +337,20 @@ export const experiences = [
   //   ],
   // },
   {
-    organisation: "Career Development Centre, NITK",
-    logo: cdc,
-    link: "https://cdc.nitk.ac.in/",
+    organisation: "We@FHSS",
+    logo: wefhss,
+    link: "http://fhss.sjp.ac.lk/mobile/",
     positions: [
       {
-        title: "Lead Developer",
-        duration: "May 2022 - July 2022",
+        title: "Back-end Developer",
+        duration: "2022",
         content: [
           {
-            text: "Led a team of 3 developers and developed various parts of the official public website using Ruby on Rails.",
+            text: "The latest app by USJ's Faculty of Humanities and Social Sciences offers personalized notifications, a university directory, profiles, and academic tracking.",
             link: "",
           },
           {
-            text: "Setup an admin interface for dynamic content management by different stakeholders.",
+            text: "Developed and implemented APIs using Axios for a mobile application designed for faculty students and academic staff, including POST requests to register users' details into a database and GET queries to retrieve filtered details from another database.",
             link: "",
           },
         ],

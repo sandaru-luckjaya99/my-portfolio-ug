@@ -30,6 +30,7 @@ import usjp from "./usjp.png";
 import blog from "./blog.png";
 import screenlock from "./screenlock.png";
 import musicStore from "./musicStore.png";
+import wefhss from "./wefhss.png"
 import cluboard from "./cluboard.png";
 import cash_flow from "./cash_flow.jpg";
 import freadom from "./freadom.jpg";
@@ -105,5 +106,6 @@ export {
   usjp,
   blog,
   musicStore,
-  screenlock
+  screenlock,
+  wefhss
 };
