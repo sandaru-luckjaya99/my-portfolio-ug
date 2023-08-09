@@ -26,6 +26,9 @@ import {
   greentrust,
   icc,
   usjp,
+  blog,
+  musicStore,
+  screenlock
   
 } from "../assets";
 
@@ -74,7 +77,10 @@ import {
   SiOpenai,
   SiGooglecloud,
   SiNextdotjs,
-  SiMongodb
+  SiMongodb,
+  SiHtml5,
+  SiCss3,
+  SiRedux
 } from "react-icons/si";
 
 import {
@@ -122,16 +128,6 @@ export const navLinks = [
 export const educationList = [
   {
     id: "education-1",
-    icon: icc,
-    title: "Ibbagamuwa Central College",
-    degree: "G.C.E. Advanced Level Examination",
-    duration: "2016 - 2018",
-    // content1: "Major: Electronics and Communication Engineering",
-    // content2: "Minor: Information Technology",
-  },  
-  
-  {
-    id: "education-1",
     icon: usjp,
     title: "University of Sri Jayewardenepura",
     degree: "BSc (Hons) in Information Technology",
@@ -139,7 +135,19 @@ export const educationList = [
     content2: "Faculty of humanities and Social sciences",
     duration: "Undergraduate From 2020",
 
+  },  
+  
+  {
+
+    id: "education-1",
+    icon: icc,
+    title: "Ibbagamuwa Central College",
+    degree: "G.C.E. Advanced Level Examination",
+    duration: "2016 - 2018",
+
   },
+
+  
 ];
 
 export const skills = [
@@ -553,12 +561,11 @@ export const openSourceContributions = [
 export const projects = [
   {
     id: "project-1",
-    title: "Comicify.ai",
-    github: "https://github.com/ayush4345/Comicify.ai",
-    link: "https://comicify-ai.vercel.app/",
-    image: comicify_ai,
+    title: "Blog site web app",
+    github: "https://github.com/sandaru-luckjaya99/blogsite-web-app",
+    image: blog,
     content:
-      "Convert any academic/news/boring text into cool comic strips using GPT-3.5 and Stable Diffusion!",
+      "Created interactive blog site with MERN stack, from schema design to API integration. Developed entire app from scratch, including frontend, server-side programming, and database design. Gained foundational knowledge in MERN stack web development, including data modelling and API management.",
     stack: [
       {
         id: "icon-1",
@@ -567,34 +574,38 @@ export const projects = [
       },
       {
         id: "icon-2",
-        icon: SiTailwindcss,
-        name: "TailwindCSS"
+        icon: SiJavascript,
+        name: "JavaScript"
       },
       {
         id: "icon-3",
+        icon: SiMongodb,
+        name: "Mongodb"
+      },
+      {
+        id: "icon-4",
         icon: SiOpenai,
         name: "OpenAI"
       },
       {
-        id: "icon-4",
-        icon: SiGooglecloud,
-        name: "Google Cloud Platform"
+        id: "icon-5",
+        icon: SiHtml5,
+        name: "HTML"
       },
       {
-        id: "icon-5",
-        icon: SiFlask,
-        name: "Flask"
+        id: "icon-6",
+        icon: SiCss3,
+        name: "CSS"
       },
     ],
   },
   {
     id: "project-2",
-    title: "GreenTrust",
-    github: "https://github.com/mittal-parth/GreenTrust",
-    link: "https://green-trust-fantom.netlify.app/",
-    image: greentrust,
+    title: "Music Store Mobile App",
+    github: "https://github.com/sandaru-luckjaya99/music-store-Mobile-App",
+    image: musicStore,
     content:
-      "Winning project at 3 hackathons, GreenTrust offers a novel solution for obtaining certification in organic farming by organizing credible and decentralized Participatory Guarantee Systems (PGSs).",
+      "Acquired foundational knowledge of React and its application in mobile app development, as well as experience using Figma for UI design. Gained experience implementing MongoDB as the database for a mobile app and working with APIs and Redux for state management.",
     stack: [
       {
         id: "icon-1",
@@ -603,28 +614,28 @@ export const projects = [
       },
       {
         id: "icon-2",
-        icon: SiTailwindcss,
-        name: "TailwindCSS"
+        icon: SiJavascript,
+        name: "JavaScript"
       },
       {
         id: "icon-3",
-        icon: SiNextdotjs,
-        name: "Next.js"
+        icon: SiMongodb,
+        name: "Mongodb"
       },
       {
         id: "icon-4",
-        icon: SiIpfs,
-        name: "IPFS"
+        icon: SiPostman,
+        name: "Postman"
       },
       {
         id: "icon-5",
-        icon: SiSolidity,
-        name: "Solidity"
+        icon: SiRedux,
+        name: "Redux"
       },
       {
         id: "icon-6",
-        icon: IoIosNotificationsOutline,
-        name: "Push Protocol"
+        icon: SiFigma,
+        name: "Figma"
       },
     ],
   },
@@ -632,8 +643,8 @@ export const projects = [
     id: "project-3",
     title: "ChargeSwap",
     github: "https://github.com/CommanderAstern/ChargeSwap",
-    link: "https://devfolio.co/projects/chargeswap-3527",
-    image: chargeswap,
+    // link: "https://devfolio.co/projects/chargeswap-3527",
+    image: screenlock,
     content:
       "A Blockchain-based EV-Battery swapping solution - winning project at ETHIndia'22, the world's largest Ethereum Hackathon",
     stack: [
